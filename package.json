@@ -1,0 +1,25 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "k6-to-honeycomb is a program that sends [k6](https://k6.io) results into Honeycomb for\r visualization and analysis.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmc/k6-to-honeycomb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmc/k6-to-honeycomb/issues"
+  },
+  "homepage": "https://github.com/tmc/k6-to-honeycomb#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
