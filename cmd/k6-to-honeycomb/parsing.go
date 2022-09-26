@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	k6tohoneycomb "github.com/tmc/k6-to-honeycomb"
+	k6tohoneycomb "github.com/MohammedAli017/K6-honeycomb"
 )
 
 func parseK6Results(inputs []string) ([]k6tohoneycomb.K6DataPoint, error) {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	libhoney "github.com/honeycombio/libhoney-go"
-	k6tohoneycomb "github.com/tmc/k6-to-honeycomb"
+	k6tohoneycomb "github.com/MohammedAli017/K6-honeycomb"
 )
 
 func shipToHC(hcAPIKey string, hcDataset string, results []k6tohoneycomb.K6DataPoint) error {
