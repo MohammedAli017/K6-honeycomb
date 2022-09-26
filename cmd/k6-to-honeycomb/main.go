@@ -33,7 +33,7 @@ import (
 )
 
 var (
-	flagDataset = flag.String("d", "", "If provided, overrides the name of the honeycomb dataset.")
+	flagDataset = flag.String("d", "gziptest", "If provided, overrides the name of the honeycomb dataset.")
 	flagAPIKey  = flag.String("k", "", "The Honeycomb write API key to use (will read from HC_API_KEY if not provided).")
 )
 
@@ -60,10 +60,6 @@ func run(inputs []string) error {
 	if *flagAPIKey == "" {
 		*flagAPIKey = os.Getenv("HC_API_KEY")
 	}
-	if *flagDataset == "" {
-		flagDataset = os.Getenv("DATASET")
-	}
-	
 
 	if err := shipToHC(*flagAPIKey, *flagDataset, parsed); err != nil {
 		return fmt.Errorf("issue shipping events to Honeycomb: %w", err)
