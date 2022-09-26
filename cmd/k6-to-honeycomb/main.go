@@ -61,7 +61,7 @@ func run(inputs []string) error {
 		*flagAPIKey = os.Getenv("HC_API_KEY")
 	}
 	if *flagDataset == "" {
-		*flagDataset = os.Getenv("DATASET")
+		flagDataset = os.Getenv("DATASET")
 	}
 	
 
