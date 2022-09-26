@@ -40,6 +40,7 @@ var (
 func main() {
 	flag.Parse()
 	fmt.Println("k6-to-honeycomb")
+	fmt.Println("k6-to-honeycomb2")
 	fmt.Println("dataset:", *flagDataset)
 	fmt.Println("api key:", *flagAPIKey)
 
