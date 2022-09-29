@@ -33,8 +33,8 @@ import (
 )
 
 var (
-	flagDataset = flag.String("d", "Platform-5-K6loadtest-result", "If provided, overrides the name of the honeycomb dataset.")
-	flagAPIKey  = flag.String("k", "9Hl7Jf35QFelQDgBsrvudP", 
+	flagDataset = flag.String("d", "Your-data-set-name", "If provided, overrides the name of the honeycomb dataset.")
+	flagAPIKey  = flag.String("k", "Your-API-Key", 
 	"The Honeycomb write API key to use (will read from HC_API_KEY if not provided).")
 )
 

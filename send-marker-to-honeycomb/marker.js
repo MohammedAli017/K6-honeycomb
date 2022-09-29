@@ -8,10 +8,11 @@ function sendPayload() {
       "type": "Testing"
   },
     headers: {
-        "X-Honeycomb-Team": "9Hl7Jf35QFelQDgBsrvudP"
+        "X-Honeycomb-Team": "you-API-key"
     }
   }).then(data => {
     console.log(data)
   }).catch(error => { console.log(error) })
   }
   sendPayload()
+  //sR88iTCBqXWNI8btdFK52A
